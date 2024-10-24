@@ -1,1 +1,3 @@
 # dnsPractica
+
+Aqui las capturas
