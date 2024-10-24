@@ -10,6 +10,11 @@ Vagrant.configure("2") do |config|
       venus.vm.provider "virtualbox" do |vb|
         vb.name = "venus"
       end
+      venus.vm.provision "shell", inline: <<-SHELL
+      apt-get update
+      apt-get install -y bind9 bind9utils bind9-doc
+    SHELL
+
     end
 
     # Máquina 3: Debian texto (tierra.sistema.test)
@@ -20,6 +25,11 @@ Vagrant.configure("2") do |config|
       tierra.vm.provider "virtualbox" do |vb|
         vb.name = "tierra"
       end
+      tierra.vm.provision "shell", inline: <<-SHELL
+      apt-get update
+      apt-get install -y bind9 bind9utils bind9-doc
+      SHELL
     end
+    
     # Máquina 4: Windows gráfico o server (marte.sistema.test)-----IMAGINARIA
 end
