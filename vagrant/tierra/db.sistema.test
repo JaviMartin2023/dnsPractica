@@ -1,0 +1,22 @@
+$TTL    86400
+@       IN      SOA     ns1.sistema.test. admin.sistema.test. (
+                      2024010101 ; Serial
+                      3600       ; Refresh
+                      1800       ; Retry
+                      604800     ; Expire
+                      86400      ; Negative Cache TTL
+)
+
+@       IN      NS      tierra.sistema.test.
+@       IN      NS      venus.sistema.test.
+
+ns1     IN      CNAME   tierra.sistema.test.
+ns2     IN      CNAME   venus.sistema.test.
+mail    IN      CNAME   marte.sistema.test.
+
+sistema.test.    IN  A   192.168.57.101
+tierra  IN      A       192.168.57.103
+venus   IN      A       192.168.57.102
+marte   IN      A       192.168.57.104
+
+@       IN      MX      10 marte.sistema.test.

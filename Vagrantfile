@@ -12,7 +12,10 @@ Vagrant.configure("2") do |config|
       end
       venus.vm.provision "shell", inline: <<-SHELL
       apt-get update
-      apt-get install -y bind9 bind9utils bind9-doc
+        apt-get install -y bind9 dnsutils
+        cp /vagrant/venus/named.conf.local /etc/bind/named.conf.local
+        cp /vagrant/venus/named.conf.options /etc/bind/named.conf.options
+        systemctl restart bind9
     SHELL
 
     end
@@ -27,7 +30,12 @@ Vagrant.configure("2") do |config|
       end
       tierra.vm.provision "shell", inline: <<-SHELL
       apt-get update
-      apt-get install -y bind9 bind9utils bind9-doc
+        apt-get install -y bind9 dnsutils
+        cp /vagrant/tierra/named.conf.local /etc/bind/named.conf.local
+        cp /vagrant/tierra/named.conf.options /etc/bind/named.conf.options
+        cp /vagrant/tierra/db.sistema.test /var/lib/bind/db.sistema.test
+        cp /vagrant/tierra/db.192 /var/lib/bind/db.192
+        systemctl restart bind9
       SHELL
     end
     
