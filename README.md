@@ -34,7 +34,7 @@ Este documento describe los pasos realizados para verificar la correcta configur
 
 ![image](https://github.com/user-attachments/assets/c014ebbd-3f0b-4f2d-9d47-04faa83d9a9e)
 
-### Alias
+### Alias (CNAME)
 
 ![image](https://github.com/user-attachments/assets/aa1d2e3c-584d-4b34-8771-e6a8176e92aa)
 
@@ -48,7 +48,7 @@ Este documento describe los pasos realizados para verificar la correcta configur
 
 ![image](https://github.com/user-attachments/assets/3d51ca09-36fb-4dd4-9ba1-db736d262728)
 
-### AXFR
+### Transferencia de zona (AXFR)
 
 Lo comprobaremos desde venus
 
