@@ -2,6 +2,8 @@
 
 Este documento detalla el proceso de verificación del funcionamiento de los servidores DNS configurados en la red `sistema.test`, incluyendo las comprobaciones de registros A, registros inversos, alias, servidores NS, registros MX y transferencia de zona entre el servidor maestro y el esclavo.
 
+Todas las capturas con los archivos configurados como pide la práctica se encuentran en el repositorio, en la carpeta capturas, para que aquí quede documentado claramente solo la comprobación de que funciona correctamente.
+
 ## Tabla de Contenidos
 
 1. [Introducción](#introducción)
